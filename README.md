@@ -21,6 +21,7 @@ El dataset original se encuentra en `data/oferta_laboral_ecuador.csv`, y despué
 
 
 
+
 Descripción del propósito del dataset
 
 Explicación de los pasos de limpieza y transformación
