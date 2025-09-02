@@ -1,23 +1,16 @@
-# Grupo3Dataset
-# 📊 Análisis de Ofertas Laborales en Ecuador
+## 📊 Análisis Exploratorio: Remuneración en ofertas laborales
 
-Este proyecto tiene como objetivo analizar un conjunto de datos de ofertas de empleo en Ecuador, con el fin de extraer información valiosa sobre la **demanda laboral**, los **salarios** y las **tendencias del mercado**. El análisis permite obtener insights que pueden ser útiles tanto para candidatos como para empleadores, ayudando a tomar decisiones estratégicas sobre contratación, búsqueda de empleo y planificación de talento.
+Durante el análisis exploratorio, se centró la atención en la variable remuneracion_num, que representa el valor promedio del rango salarial publicado en cada oferta de empleo.
 
----
+Se generó un histograma de distribución para observar las tendencias salariales más frecuentes. Los hallazgos clave fueron los siguientes:
 
-## 🗂️ Descripción del Dataset
+Distribución no uniforme: La mayoría de las ofertas se concentran en los rangos más bajos, especialmente entre $400 y $500, lo cual refleja una realidad del mercado laboral con alta demanda de mano de obra con salarios base.
 
-El dataset contiene información detallada sobre ofertas de trabajo publicadas en Ecuador y cuenta con las siguientes variables principales:
+Picos de concentración: Se observaron picos importantes en $450 y $625, probablemente asociados a salarios mínimos y rangos estándar ofrecidos en sectores públicos o servicios básicos.
 
-- **Cargo ofertado**: el puesto o función laboral solicitada.  
-- **Área o sector**: industria o departamento al que pertenece la oferta.  
-- **Ciudad**: ubicación geográfica de la vacante.  
-- **Rango de remuneración**: salario mínimo y máximo ofrecido.  
-- **Fecha de publicación**: día en que se publicó la oferta.
+Escasez de salarios altos: Son escasas las oportunidades que superan los $1.000, lo cual sugiere una baja oferta de empleos altamente calificados o de nivel gerencial en el dataset.
 
-El dataset original se encuentra en `data/oferta_laboral_ecuador.csv`, y después del proceso de limpieza se generó `data/ofertas_ec_limpio.csv` listo para el análisis.
-
-
+Este análisis permite tener un panorama más claro sobre la estructura salarial promedio ofrecida en el mercado laboral ecuatoriano según el dataset, y servirá como base para futuras correlaciones con otras variables como nivel de instrucción, ciudad o tipo de jornada.
 
 
 
