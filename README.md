@@ -85,7 +85,7 @@ Todas las figuras están guardadas en la carpeta Figuras.
 
 ## 📂 Estructura del Proyecto
 
-
+```text
 ├── data/
 │   └── oferta_laboral_ecuador.csv
 ├── Notebooks/
@@ -93,6 +93,7 @@ Todas las figuras están guardadas en la carpeta Figuras.
 ├── Figuras/
 │   └── (gráficos exportados)
 └── README.md
+```text
 
 
 ## 🎯 Conclusión
