@@ -72,6 +72,24 @@ Este proceso asegura que los análisis estadísticos y visualizaciones sean conf
 
 ---
 
+🎓 Relevancia Académica
+
+Este dataset es especialmente útil en la materia de Tratamiento de Datos, ya que permite aplicar:
+
+  -Técnicas de preprocesamiento y limpieza de datos.
+
+  -Transformación y creación de nuevas variables.
+
+  -Análisis exploratorio con estadísticas descriptivas.
+
+  -Visualización de datos para comunicar hallazgos de forma efectiva.
+
+  -Opcionalmente, el uso de Machine Learning para predicción salarial.
+
+En otras palabras, funciona como un laboratorio práctico que conecta la teoría con un caso real de interés social y económico.
+
+---
+
 ## 📌 Próximos pasos
 
 Este análisis es un **primer paso** para comprender el mercado laboral ecuatoriano. Futuras mejoras pueden incluir:
