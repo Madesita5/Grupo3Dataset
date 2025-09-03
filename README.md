@@ -97,6 +97,38 @@ Todas las figuras están guardadas en la carpeta Figuras.
 
 # 📌 Conclusiones Técnicas del Análisis
 
-## 🎯 Conclusión
+1. Concentración de la demanda laboral
+
+    - El análisis de frecuencia por cargos ofertados mostró una clara asimetría positiva, indicando que un número reducido de cargos acumula una alta proporción de vacantes. Esto sugiere la existencia de alta concentración de demanda en perfiles operativos, comerciales o administrativos.
+
+    - Se observa una distribución de tipo Zipfian, típica en fenómenos socioeconómicos donde unos pocos elementos dominan el conjunto.
+
+2. Distribución salarial con outliers
+
+    - La variable remuneracion_mid evidenció una distribución sesgada a la derecha, con la mayoría de los valores concentrados en salarios bajos o medios, y presencia de outliers superiores que distorsionan el promedio.
+
+    - Los boxplots por ciudad y por sector confirman que ciertos sectores como tecnología y salud presentan mayor dispersión y mediana más alta en los salarios.
+
+    - Esta dispersión podría estar influenciada por diferencias en experiencia requerida, ubicación o habilidades técnicas específicas.
+
+  3. Análisis por ciudad
+
+      - Quito y Guayaquil concentran la mayor cantidad de vacantes, lo que se alinea con su papel como centros económicos del país.
+
+      - Sin embargo, el análisis cruzado de ciudades con salarios promedio no indica una relación directa entre volumen de vacantes y mejores sueldos. Es decir, no siempre más vacantes significa mejores salarios, lo que implica que el análisis de calidad laboral debe ir más allá de la cantidad.
+
+    4. Homogeneidad sectorial
+
+      - El gráfico de barras por sector muestra una distribución desbalanceada: sectores como ventas, servicios, y administración concentran gran parte de las ofertas, mientras que áreas como investigación o educación están subrepresentadas.
+
+      - Este patrón puede tener implicaciones para políticas públicas en formación técnica y redistribución de talento.
+
+    5. Calidad de los datos y tratamiento
+
+      - Durante el proceso de limpieza se detectaron múltiples valores atípicos en la columna remuneracion, así como formatos mixtos (rango de texto, strings alfanuméricos, ceros falsos, etc.).
+
+      - Se aplicaron transformaciones como ```regex```, ```split```, ```replace``` y ```astype(float)``` para estandarizar los salarios y derivar la variable ```remuneracion_mid```, lo cual fue fundamental para habilitar un análisis cuantitativo robusto.  
+
+## 🎯 Conclusión Final
 
 Este proyecto representa un ejercicio práctico de análisis de datos aplicados a un contexto laboral real en Ecuador. Permite generar información accionable para diversos actores: profesionales, empresas, investigadores y formuladores de políticas públicas.
