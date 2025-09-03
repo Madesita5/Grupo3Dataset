@@ -18,6 +18,22 @@ El dataset original se encuentra en `data/oferta_laboral_ecuador.csv`, y despué
 
 ---
 
+## ✅ Ventajas y Desventajas del Dataset  
+
+### Ventajas  
+- Información **real y contextualizada** del mercado laboral en Ecuador.  
+- Incluye **variables clave** para análisis de demanda y salarios.  
+- Útil para **múltiples enfoques analíticos**: economía, sociología, gestión de talento.  
+- **Formato estructurado (CSV)**, lo que facilita su uso en Python, R, SQL o Power BI.  
+
+### Desventajas  
+- Puede presentar **sesgo geográfico o sectorial** (algunas ciudades/sectores sobre-representados).  
+- Datos **limitados**: no incluye experiencia, nivel educativo, tipo de contrato ni beneficios adicionales.  
+- Posible **desactualización**: refleja un periodo específico y no necesariamente el presente.  
+- Riesgo de **errores humanos** en los anuncios originales.  
+
+----------------------------------------------------------------------------------------------------------------------
+
 ## 🧹 Proceso de Limpieza y Transformación de Datos
 
 Para garantizar la calidad y consistencia de la información, se aplicaron los siguientes pasos de preprocesamiento:
@@ -79,6 +95,43 @@ Este proceso asegura que los análisis estadísticos y visualizaciones sean conf
 
 ---
 
+## 🔎 Análisis Exploratorio de Datos (EDA)  
+
+Algunas de las preguntas exploradas fueron:  
+
+- ¿Cuáles son los sectores con mayor número de ofertas laborales?  
+- ¿Qué ciudades concentran más oportunidades de empleo?  
+- ¿Cómo varían los salarios según el área o sector?  
+- ¿Existen **outliers** en los rangos salariales?  
+- ¿Qué patrones se observan en la evolución temporal de las publicaciones?  
+
+📓 El análisis se encuentra documentado en `Notebooks/EDA.ipynb`.  
+
+---
+💡 Hallazgos e Insights
+
+  -La demanda laboral se concentra en grandes ciudades como Quito y Guayaquil.
+  
+  -Sectores como tecnología, ventas y salud destacan por la cantidad de ofertas.
+  
+  -Existen diferencias significativas en los salarios según la ciudad y el área.
+
+  -Algunos anuncios muestran salarios atípicos (muy altos o muy bajos) que deben tratarse como outliers
+
+---
+
+## 📊 Visualizaciones  
+
+Se generaron gráficos informativos y atractivos usando **Matplotlib** y **Seaborn**:  
+
+- **Gráficos de barras** → Sectores con mayor número de vacantes.  
+- **Mapas interactivos (Folium)** → Distribución geográfica de ofertas.  
+- **Boxplots** → Comparación de salarios entre sectores y ciudades.  
+- **Series temporales** → Evolución de publicaciones de empleo por mes.  
+
+--------------------------------------------------------------
+
+
 ## 🚀 Tecnologías Utilizadas
 
 - **Python**: manipulación de datos y análisis.  
@@ -105,7 +158,7 @@ Este dataset es especialmente útil en la materia de Tratamiento de Datos, ya qu
 
 En otras palabras, funciona como un laboratorio práctico que conecta la teoría con un caso real de interés social y económico.
 
----
+
 
 ## 📌 Próximos pasos
 
