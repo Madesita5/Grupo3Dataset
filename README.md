@@ -127,7 +127,7 @@ Todas las figuras están guardadas en la carpeta Figuras.
 
       - Durante el proceso de limpieza se detectaron múltiples valores atípicos en la columna remuneracion, así como formatos mixtos (rango de texto, strings alfanuméricos, ceros falsos, etc.).
 
-      - Se aplicaron transformaciones como "regex", "split", "replace" y "astype(float)" para estandarizar los salarios y derivar la variable `remuneracion_mid`, lo cual fue fundamental para habilitar un análisis cuantitativo robusto.  
+      - Se aplicaron transformaciones como "regex", "split", "replace" y "astype(float)" para estandarizar los salarios y derivar la variable "remuneracion_mid", lo cual fue fundamental para habilitar un análisis cuantitativo robusto.  
 
 ## 🎯 Conclusión Final
 
