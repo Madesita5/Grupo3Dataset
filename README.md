@@ -159,6 +159,32 @@ Este dataset es especialmente útil en la materia de Tratamiento de Datos, ya qu
 En otras palabras, funciona como un laboratorio práctico que conecta la teoría con un caso real de interés social y económico.
 
 
+## 🔎 Análisis Exploratorio de Datos (EDA)  
+
+Algunas de las preguntas exploradas fueron:  
+
+- ¿Cuáles son los sectores con mayor número de ofertas laborales?  
+- ¿Qué ciudades concentran más oportunidades de empleo?  
+- ¿Cómo varían los salarios según el área o sector?  
+- ¿Existen **outliers** en los rangos salariales?  
+- ¿Qué patrones se observan en la evolución temporal de las publicaciones?  
+
+📓 El análisis se encuentra documentado en `Notebooks/EDA.ipynb`.  
+
+---
+
+## 📊 Visualizaciones  
+
+Se generaron gráficos informativos y atractivos usando **Matplotlib** y **Seaborn**:  
+
+- **Gráficos de barras** → Sectores con mayor número de vacantes.  
+- **Mapas interactivos (Folium)** → Distribución geográfica de ofertas.  
+- **Boxplots** → Comparación de salarios entre sectores y ciudades.  
+- **Series temporales** → Evolución de publicaciones de empleo por mes.  
+
+
+------
+
 
 ## 📌 Próximos pasos
 
@@ -169,6 +195,32 @@ Este análisis es un **primer paso** para comprender el mercado laboral ecuatori
 - Creación de un **dashboard interactivo completo** con filtros por ciudad, sector y cargo.  
 - Modelos predictivos para estimar la demanda de determinados perfiles profesionales.
 ---
+
+💡 Hallazgos e Insights
+
+  -La demanda laboral se concentra en grandes ciudades como Quito y Guayaquil.
+  
+  -Sectores como tecnología, ventas y salud destacan por la cantidad de ofertas.
+  
+  -Existen diferencias significativas en los salarios según la ciudad y el área.
+  
+  -Algunos anuncios muestran salarios atípicos (muy altos o muy bajos) que deben tratarse como outliers.
+
+🎓 Relevancia Académica
+
+Este dataset es especialmente útil en la materia de Tratamiento de Datos, ya que permite aplicar:
+
+ . Técnicas de preprocesamiento y limpieza de datos.
+  
+ . Transformación y creación de nuevas variables.
+  
+ . Análisis exploratorio con estadísticas descriptivas.
+  
+ . Visualización de datos para comunicar hallazgos de forma efectiva.
+  
+ . Opcionalmente, el uso de Machine Learning para predicción salarial.
+
+En otras palabras, funciona como un laboratorio práctico que conecta la teoría con un caso real de interés social y económico.
 
 
 Descripción del propósito del dataset
