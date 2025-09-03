@@ -32,6 +32,23 @@ Este proceso asegura que los análisis estadísticos y visualizaciones sean conf
 
 ---
 
+## ✅ Ventajas y Desventajas del Dataset  
+
+### Ventajas  
+- Información **real y contextualizada** del mercado laboral en Ecuador.  
+- Incluye **variables clave** para análisis de demanda y salarios.  
+- Útil para **múltiples enfoques analíticos**: economía, sociología, gestión de talento.  
+- **Formato estructurado (CSV)**, lo que facilita su uso en Python, R, SQL o Power BI.  
+
+### Desventajas  
+- Puede presentar **sesgo geográfico o sectorial** (algunas ciudades/sectores sobre-representados).  
+- Datos **limitados**: no incluye experiencia, nivel educativo, tipo de contrato ni beneficios adicionales.  
+- Posible **desactualización**: refleja un periodo específico y no necesariamente el presente.  
+- Riesgo de **errores humanos** en los anuncios originales.  
+
+---
+
+
 ## 📈 Principales Hallazgos
 
 - **🔝 Cargos más frecuentes**: un pequeño grupo de posiciones concentra la mayoría de la demanda laboral, lo que evidencia áreas con alta competitividad y oportunidades.  
