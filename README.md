@@ -18,6 +18,23 @@ El dataset original se encuentra en `data/oferta_laboral_ecuador.csv`, y despué
 
 ---
 
+##🌍 Contexto del Proyecto
+
+  -El mercado laboral en Ecuador enfrenta retos relacionados con:
+  
+  -Alta competencia laboral en áreas urbanas como Quito y Guayaquil.
+  
+  -Brechas salariales según región, sector y nivel de especialización.
+  
+  -Transformación digital y nuevas demandas de talento en áreas tecnológicas.
+  
+  -Dificultades de acceso a información clara sobre empleos y sueldos.
+
+Analizar ofertas laborales ayuda a entender qué sectores demandan más talento, dónde están las mejores oportunidades y cómo evolucionan los salarios. Esto puede ser útil tanto para profesionales que buscan empleo como para empresas, investigadores y formuladores de políticas públicas.
+
+
+----
+
 ## ✅ Ventajas y Desventajas del Dataset  
 
 ### Ventajas  
@@ -61,6 +78,20 @@ Este proceso asegura que los análisis estadísticos y visualizaciones sean conf
 - Datos **limitados**: no incluye experiencia, nivel educativo, tipo de contrato ni beneficios adicionales.  
 - Posible **desactualización**: refleja un periodo específico y no necesariamente el presente.  
 - Riesgo de **errores humanos** en los anuncios originales.  
+
+---
+
+## 🔑 Variables Clave
+
+Además de las variables ya mencionadas, se pueden crear nuevas para enriquecer el análisis:
+
+  1. remuneracion_mid: promedio entre salario mínimo y máximo ofrecido.
+  
+  2. mes_publicacion: mes de la publicación (útil para analizar tendencias temporales).
+  
+  3. categoria_sector: agrupación de áreas afines (ejemplo: TI, salud, comercio, educación).
+  
+  4. salario_normalizado: rango salarial ajustado en escala para comparaciones más justas.
 
 ---
 
@@ -108,7 +139,7 @@ Algunas de las preguntas exploradas fueron:
 📓 El análisis se encuentra documentado en `Notebooks/EDA.ipynb`.  
 
 ---
-💡 Hallazgos e Insights
+## 💡 Hallazgos e Insights
 
   -La demanda laboral se concentra en grandes ciudades como Quito y Guayaquil.
   
@@ -142,7 +173,7 @@ Se generaron gráficos informativos y atractivos usando **Matplotlib** y **Seabo
 
 ---
 
-🎓 Relevancia Académica
+## 🎓 Relevancia Académica
 
 Este dataset es especialmente útil en la materia de Tratamiento de Datos, ya que permite aplicar:
 
@@ -183,7 +214,37 @@ Se generaron gráficos informativos y atractivos usando **Matplotlib** y **Seabo
 - **Series temporales** → Evolución de publicaciones de empleo por mes.  
 
 
-------
+---
+
+## 📈 Posibles Análisis Avanzados
+
+Además del EDA básico, se pueden explorar:
+
+## Análisis de correlaciones:
+
+  Relación entre ciudad y nivel salarial.
+  
+  Relación entre sector y rango salarial.
+
+## Modelos predictivos (Machine Learning):
+
+  Regresión lineal para estimar salario según cargo, ciudad y sector.
+  
+  Clasificación de ofertas por nivel de salario (alto, medio, bajo).
+
+## Análisis geográfico:
+
+  Mapas de calor con Folium mostrando concentración de empleos por provincia.
+
+  Comparación de sueldos promedio entre Sierra, Costa y Amazonía.
+
+## Series temporales:
+
+  Evolución del número de vacantes a lo largo del tiempo.
+  
+  Impacto de la pandemia u otros eventos en la publicación de ofertas.
+
+---
 
 
 ## 📌 Próximos pasos
@@ -196,31 +257,7 @@ Este análisis es un **primer paso** para comprender el mercado laboral ecuatori
 - Modelos predictivos para estimar la demanda de determinados perfiles profesionales.
 ---
 
-💡 Hallazgos e Insights
 
-  -La demanda laboral se concentra en grandes ciudades como Quito y Guayaquil.
-  
-  -Sectores como tecnología, ventas y salud destacan por la cantidad de ofertas.
-  
-  -Existen diferencias significativas en los salarios según la ciudad y el área.
-  
-  -Algunos anuncios muestran salarios atípicos (muy altos o muy bajos) que deben tratarse como outliers.
-
-🎓 Relevancia Académica
-
-Este dataset es especialmente útil en la materia de Tratamiento de Datos, ya que permite aplicar:
-
- . Técnicas de preprocesamiento y limpieza de datos.
-  
- . Transformación y creación de nuevas variables.
-  
- . Análisis exploratorio con estadísticas descriptivas.
-  
- . Visualización de datos para comunicar hallazgos de forma efectiva.
-  
- . Opcionalmente, el uso de Machine Learning para predicción salarial.
-
-En otras palabras, funciona como un laboratorio práctico que conecta la teoría con un caso real de interés social y económico.
 
 
 Descripción del propósito del dataset
