@@ -4,7 +4,7 @@ Este proyecto tiene como objetivo analizar un conjunto de datos reales sobre ofe
 
 ---
 
-## 🗂️ Descripción del Dataset
+# 🗂️ Descripción del Dataset
 
 El dataset original (oferta_laboral_ecuador.csv) contiene registros de vacantes laborales publicadas en Ecuador, con variables como:
 
@@ -13,7 +13,7 @@ El dataset original (oferta_laboral_ecuador.csv) contiene registros de vacantes 
 - **Rango de remuneración**: salario mínimo y máximo ofrecido.  
 - **Fecha de publicación**: día en que se publicó la oferta.
 
-## 🧹 Limpieza y Transformación
+# 🧹 Limpieza y Transformación
 Durante el preprocesamiento del dataset se realizaron las siguientes tareas:
 
    1. Eliminación de duplicados y valores nulos
@@ -22,35 +22,35 @@ Durante el preprocesamiento del dataset se realizaron las siguientes tareas:
 
    3. Conversión de fechas al formato datetime
 
-    4. Extracción del mes de publicación
+   4. Extracción del mes de publicación
 
-    5. Transformación de rangos salariales:
+   5. Transformación de rangos salariales:
 
         * Se extrajeron los valores numéricos desde strings tipo "USD 600 a USD 900"
 
         * Se creó una nueva variable: remuneracion_mid, que representa el promedio entre salario mínimo y máximo
 
-## 🔍 Análisis Exploratorio
+# 🔍 Análisis Exploratorio
 
 Con los datos limpios, se realizaron diversos análisis y visualizaciones:
 
-# 📌 Cargos Más Demandados
+## 📌 Cargos Más Demandados
 
 Se identificaron los puestos más ofertados en el país, revelando los sectores con mayor necesidad de talento.
 
-# 🌆 Ciudades con Más Ofertas
+## 🌆 Ciudades con Más Ofertas
 
 Se analizó la concentración de vacantes por ciudad, destacando Quito y Guayaquil como los principales centros laborales.
 
-# 💰 Distribución de Salarios
+## 💰 Distribución de Salarios
 
 Se exploró la variable remuneracion_mid para comprender la variabilidad de los sueldos, detectando también valores atípicos (outliers).
 
-# 📅 Evolución Temporal
+## 📅 Evolución Temporal
 
 Se evaluó la cantidad de publicaciones por mes, identificando picos y caídas en la actividad de contratación.
 
-## 📊 Visualizaciones
+# 📊 Visualizaciones
 
 Se generaron gráficos con Matplotlib, Seaborn y Plotly para comunicar los resultados:
 
@@ -85,13 +85,15 @@ Todas las figuras están guardadas en la carpeta Figuras.
 
 ## 📂 Estructura del Proyecto
 
-├── Datos/
+
+├── data/
 │   └── oferta_laboral_ecuador.csv
 ├── Notebooks/
 │   └── analisis_ofertas_ec_colab_completo.ipynb
 ├── Figuras/
 │   └── (gráficos exportados)
-├── README.md
+└── README.md
+
 
 ## 🎯 Conclusión
 
