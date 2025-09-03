@@ -111,19 +111,19 @@ Todas las figuras están guardadas en la carpeta Figuras.
 
     - Esta dispersión podría estar influenciada por diferencias en experiencia requerida, ubicación o habilidades técnicas específicas.
 
-  3. Análisis por ciudad
+3. Análisis por ciudad
 
       - Quito y Guayaquil concentran la mayor cantidad de vacantes, lo que se alinea con su papel como centros económicos del país.
 
       - Sin embargo, el análisis cruzado de ciudades con salarios promedio no indica una relación directa entre volumen de vacantes y mejores sueldos. Es decir, no siempre más vacantes significa mejores salarios, lo que implica que el análisis de calidad laboral debe ir más allá de la cantidad.
 
-    4. Homogeneidad sectorial
+4. Homogeneidad sectorial
 
       - El gráfico de barras por sector muestra una distribución desbalanceada: sectores como ventas, servicios, y administración concentran gran parte de las ofertas, mientras que áreas como investigación o educación están subrepresentadas.
 
       - Este patrón puede tener implicaciones para políticas públicas en formación técnica y redistribución de talento.
 
-    5. Calidad de los datos y tratamiento
+5. Calidad de los datos y tratamiento
 
       - Durante el proceso de limpieza se detectaron múltiples valores atípicos en la columna remuneracion, así como formatos mixtos (rango de texto, strings alfanuméricos, ceros falsos, etc.).
 
