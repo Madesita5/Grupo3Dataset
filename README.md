@@ -159,6 +159,32 @@ Este dataset es especialmente útil en la materia de Tratamiento de Datos, ya qu
 En otras palabras, funciona como un laboratorio práctico que conecta la teoría con un caso real de interés social y económico.
 
 
+## 🔎 Análisis Exploratorio de Datos (EDA)  
+
+Algunas de las preguntas exploradas fueron:  
+
+- ¿Cuáles son los sectores con mayor número de ofertas laborales?  
+- ¿Qué ciudades concentran más oportunidades de empleo?  
+- ¿Cómo varían los salarios según el área o sector?  
+- ¿Existen **outliers** en los rangos salariales?  
+- ¿Qué patrones se observan en la evolución temporal de las publicaciones?  
+
+📓 El análisis se encuentra documentado en `Notebooks/EDA.ipynb`.  
+
+---
+
+## 📊 Visualizaciones  
+
+Se generaron gráficos informativos y atractivos usando **Matplotlib** y **Seaborn**:  
+
+- **Gráficos de barras** → Sectores con mayor número de vacantes.  
+- **Mapas interactivos (Folium)** → Distribución geográfica de ofertas.  
+- **Boxplots** → Comparación de salarios entre sectores y ciudades.  
+- **Series temporales** → Evolución de publicaciones de empleo por mes.  
+
+
+------
+
 
 ## 📌 Próximos pasos
 
