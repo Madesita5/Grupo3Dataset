@@ -1,0 +1,47 @@
+c) TP3 – Modelo de Machine Learning para predecir la probabilidad de compra
+
+Crear un modelo de Machine Learning para predecir la probabilidad de que un cliente compre un producto implica varias etapas, desde la recolección y preprocesamiento de los datos hasta la evaluación y puesta en producción del modelo. Aquí están los pasos:
+
+Recolección y preparación de los datos:
+
+  Datos de clientes: Recolecta toda la información relevante de los clientes, como edad, género, historial de compras, comportamiento en el sitio web, interacciones con los productos, etc.
+  
+  Datos de productos: Información sobre los productos como categoría, precio, promociones, etc.
+
+Limpieza de los datos:
+
+  Manejo de valores nulos: Usar técnicas como imputación de valores faltantes o eliminar filas/columnas con demasiados valores nulos.
+  
+  Codificación de variables categóricas: Las variables como el género o la categoría del producto se deben convertir en variables numéricas mediante técnicas como One-Hot Encoding o Label Encoding.
+  
+  Escalado de datos: Si las variables tienen diferentes escalas, es necesario normalizarlas o estandarizarlas para que no afecten negativamente el rendimiento del modelo (por ejemplo, utilizando Min-Max Scaling o StandardScaler).
+
+Selección de características (features):
+
+  Selecciona las variables más relevantes para el modelo de predicción. Esto puede hacerse utilizando técnicas como correlation matrices, feature importance o técnicas automáticas como recursive feature elimination (RFE).
+
+División del dataset:
+
+  Divide el conjunto de datos en dos partes: entrenamiento y prueba. Usualmente, se usa un 70-80% de los datos para entrenamiento y el resto para evaluación.
+
+Entrenamiento del modelo:
+
+Se eligen modelos adecuados como:
+
+  Regresión logística: Muy utilizado para problemas de clasificación binaria (compra/no compra).
+
+Árboles de decisión: Son útiles para capturar relaciones no lineales.
+
+  Random Forest o XGBoost: Modelos más complejos que combinan múltiples árboles de decisión para mejorar la precisión.
+
+Evaluación del modelo:
+
+  Se utilizan métricas como la precisión, recall, F1-score, y ROC-AUC para evaluar el rendimiento del modelo, especialmente si el dataset está desbalanceado (es decir, hay muchas más no compras que compras).
+
+Ajuste de hiperparámetros:
+
+  Se pueden usar técnicas como GridSearchCV o RandomizedSearchCV para encontrar los mejores hiperparámetros que maximicen el rendimiento del modelo.
+
+Despliegue y monitorización:
+
+  Una vez que el modelo esté entrenado y validado, se despliega para predecir en producción. Se debe monitorear continuamente el rendimiento del modelo, ya que los datos de los clientes pueden cambiar con el tiempo.
