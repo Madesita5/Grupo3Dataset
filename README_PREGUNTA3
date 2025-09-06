@@ -45,3 +45,11 @@ Ajuste de hiperparámetros:
 Despliegue y monitorización:
 
   Una vez que el modelo esté entrenado y validado, se despliega para predecir en producción. Se debe monitorear continuamente el rendimiento del modelo, ya que los datos de los clientes pueden cambiar con el tiempo.
+
+Un punto importante para complementar este proceso es tener en cuenta el problema del desbalance de clases, que es muy común en este tipo de escenarios. Generalmente, el número de clientes que no compran es mucho mayor al de los que sí compran, 
+lo que puede sesgar al modelo hacia la clase mayoritaria. Para mitigar este problema, se pueden usar técnicas como SMOTE (Synthetic Minority Over-sampling Technique) para generar ejemplos sintéticos de la clase minoritaria, o aplicar técnicas de 
+undersampling para equilibrar el dataset. De esta forma, el modelo tendrá más capacidad de identificar correctamente los casos positivos (los clientes que compran), lo que resulta más valioso desde el punto de vista de negocio.
+
+Otro aspecto clave es la interpretabilidad del modelo. Aunque modelos como XGBoost o Random Forest suelen dar mayor precisión, no siempre son fáciles de explicar a las áreas de negocio. En cambio, técnicas más simples como la regresión logística 
+o los árboles de decisión permiten comunicar de manera clara qué factores influyen más en la probabilidad de compra. Una buena práctica es encontrar un balance entre precisión y explicabilidad, utilizando métricas de importancia de variables o métodos 
+como SHAP values para que los equipos de marketing o ventas puedan tomar decisiones estratégicas basadas en los resultados.
