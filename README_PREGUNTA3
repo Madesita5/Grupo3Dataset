@@ -1,55 +1,11 @@
-c) TP3 – Modelo de Machine Learning para predecir la probabilidad de compra
+c) TP3 – En su empresa le encargan generar un modelo de Machine Learning para predecir la probabilidad de que un cliente compre un producto. ¿Describa los pasos que realizaría?
 
-Crear un modelo de Machine Learning para predecir la probabilidad de que un cliente compre un producto implica varias etapas, desde la recolección y preprocesamiento de los datos hasta la evaluación y puesta en producción del modelo. Aquí están los pasos:
+El proceso comienza con la recolección de datos relevantes, tanto del cliente (como edad, historial de compras, navegación en la web, entre otros) como de los productos (categoría, precio, descuentos, etc.). Luego, se realiza una limpieza y preparación de los datos, resolviendo valores faltantes, codificando variables categóricas y escalando los datos cuando es necesario, con el fin de garantizar un entrenamiento óptimo del modelo.
 
-Recolección y preparación de los datos:
+Una etapa clave es la selección de características (features) que realmente aporten valor predictivo. Aquí se pueden aplicar técnicas estadísticas o algoritmos de selección automática. Después, se divide el dataset en conjuntos de entrenamiento y prueba, típicamente en proporciones como 80/20.
 
-  Datos de clientes: Recolecta toda la información relevante de los clientes, como edad, género, historial de compras, comportamiento en el sitio web, interacciones con los productos, etc.
-  
-  Datos de productos: Información sobre los productos como categoría, precio, promociones, etc.
+Con los datos listos, se procede a entrenar distintos algoritmos. Modelos como regresión logística, árboles de decisión o métodos más avanzados como Random Forest o XGBoost son comúnmente utilizados. La elección dependerá del tipo de datos y del balance entre precisión e interpretabilidad que se busque.
 
-Limpieza de los datos:
+Posteriormente, se evalúa el rendimiento del modelo usando métricas como precision, recall, F1-score o ROC-AUC, especialmente si se trata de un problema con clases desbalanceadas. En estos casos, se pueden aplicar técnicas como SMOTE o undersampling para mejorar la detección de casos positivos.
 
-  Manejo de valores nulos: Usar técnicas como imputación de valores faltantes o eliminar filas/columnas con demasiados valores nulos.
-  
-  Codificación de variables categóricas: Las variables como el género o la categoría del producto se deben convertir en variables numéricas mediante técnicas como One-Hot Encoding o Label Encoding.
-  
-  Escalado de datos: Si las variables tienen diferentes escalas, es necesario normalizarlas o estandarizarlas para que no afecten negativamente el rendimiento del modelo (por ejemplo, utilizando Min-Max Scaling o StandardScaler).
-
-Selección de características (features):
-
-  Selecciona las variables más relevantes para el modelo de predicción. Esto puede hacerse utilizando técnicas como correlation matrices, feature importance o técnicas automáticas como recursive feature elimination (RFE).
-
-División del dataset:
-
-  Divide el conjunto de datos en dos partes: entrenamiento y prueba. Usualmente, se usa un 70-80% de los datos para entrenamiento y el resto para evaluación.
-
-Entrenamiento del modelo:
-
-Se eligen modelos adecuados como:
-
-  Regresión logística: Muy utilizado para problemas de clasificación binaria (compra/no compra).
-
-Árboles de decisión: Son útiles para capturar relaciones no lineales.
-
-  Random Forest o XGBoost: Modelos más complejos que combinan múltiples árboles de decisión para mejorar la precisión.
-
-Evaluación del modelo:
-
-  Se utilizan métricas como la precisión, recall, F1-score, y ROC-AUC para evaluar el rendimiento del modelo, especialmente si el dataset está desbalanceado (es decir, hay muchas más no compras que compras).
-
-Ajuste de hiperparámetros:
-
-  Se pueden usar técnicas como GridSearchCV o RandomizedSearchCV para encontrar los mejores hiperparámetros que maximicen el rendimiento del modelo.
-
-Despliegue y monitorización:
-
-  Una vez que el modelo esté entrenado y validado, se despliega para predecir en producción. Se debe monitorear continuamente el rendimiento del modelo, ya que los datos de los clientes pueden cambiar con el tiempo.
-
-Un punto importante para complementar este proceso es tener en cuenta el problema del desbalance de clases, que es muy común en este tipo de escenarios. Generalmente, el número de clientes que no compran es mucho mayor al de los que sí compran, 
-lo que puede sesgar al modelo hacia la clase mayoritaria. Para mitigar este problema, se pueden usar técnicas como SMOTE (Synthetic Minority Over-sampling Technique) para generar ejemplos sintéticos de la clase minoritaria, o aplicar técnicas de 
-undersampling para equilibrar el dataset. De esta forma, el modelo tendrá más capacidad de identificar correctamente los casos positivos (los clientes que compran), lo que resulta más valioso desde el punto de vista de negocio.
-
-Otro aspecto clave es la interpretabilidad del modelo. Aunque modelos como XGBoost o Random Forest suelen dar mayor precisión, no siempre son fáciles de explicar a las áreas de negocio. En cambio, técnicas más simples como la regresión logística 
-o los árboles de decisión permiten comunicar de manera clara qué factores influyen más en la probabilidad de compra. Una buena práctica es encontrar un balance entre precisión y explicabilidad, utilizando métricas de importancia de variables o métodos 
-como SHAP values para que los equipos de marketing o ventas puedan tomar decisiones estratégicas basadas en los resultados.
+Finalmente, tras afinar los hiperparámetros (por ejemplo, con GridSearchCV), el modelo puede ser desplegado en un entorno real. Es importante establecer un proceso de monitorización continua, ya que el comportamiento de los clientes puede cambiar con el tiempo. Además, si se trabaja con áreas de negocio, conviene usar modelos interpretables o aplicar métodos como SHAP values para explicar el impacto de cada variable, facilitando la toma de decisiones estratégicas basadas en datos.
