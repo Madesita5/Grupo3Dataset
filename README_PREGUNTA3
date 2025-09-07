@@ -1,11 +1,31 @@
-c) TP3 – En su empresa le encargan generar un modelo de Machine Learning para predecir la probabilidad de que un cliente compre un producto. ¿Describa los pasos que realizaría?
+c) TP3 – En su empresa le encargan generar un modelo de Machine Learning para predecir la probabilidad
+ de que un cliente compre un producto. ¿Describa los pasos que realizaría?
 
-El proceso comienza con la recolección de datos relevantes, tanto del cliente (como edad, historial de compras, navegación en la web, entre otros) como de los productos (categoría, precio, descuentos, etc.). Luego, se realiza una limpieza y preparación de los datos, resolviendo valores faltantes, codificando variables categóricas y escalando los datos cuando es necesario, con el fin de garantizar un entrenamiento óptimo del modelo.
 
-Una etapa clave es la selección de características (features) que realmente aporten valor predictivo. Aquí se pueden aplicar técnicas estadísticas o algoritmos de selección automática. Después, se divide el dataset en conjuntos de entrenamiento y prueba, típicamente en proporciones como 80/20.
+El proceso comienza con la recolección de datos relevantes, tanto del cliente (como edad, historial de
+ compras, navegación en la web, entre otros) como de los productos (categoría, precio, descuentos, 
+ etc.). Luego, se realiza una limpieza y preparación de los datos, resolviendo valores faltantes, 
+ codificando variables categóricas y escalando los datos cuando es necesario, con el fin de garantizar 
+ un entrenamiento óptimo del modelo.
 
-Con los datos listos, se procede a entrenar distintos algoritmos. Modelos como regresión logística, árboles de decisión o métodos más avanzados como Random Forest o XGBoost son comúnmente utilizados. La elección dependerá del tipo de datos y del balance entre precisión e interpretabilidad que se busque.
 
-Posteriormente, se evalúa el rendimiento del modelo usando métricas como precision, recall, F1-score o ROC-AUC, especialmente si se trata de un problema con clases desbalanceadas. En estos casos, se pueden aplicar técnicas como SMOTE o undersampling para mejorar la detección de casos positivos.
+Una etapa clave es la selección de características (features) que realmente aporten valor predictivo. 
+Aquí se pueden aplicar técnicas estadísticas o algoritmos de selección automática. Después, se divide el 
+dataset en conjuntos de entrenamiento y prueba, típicamente en proporciones como 80/20.
 
-Finalmente, tras afinar los hiperparámetros (por ejemplo, con GridSearchCV), el modelo puede ser desplegado en un entorno real. Es importante establecer un proceso de monitorización continua, ya que el comportamiento de los clientes puede cambiar con el tiempo. Además, si se trabaja con áreas de negocio, conviene usar modelos interpretables o aplicar métodos como SHAP values para explicar el impacto de cada variable, facilitando la toma de decisiones estratégicas basadas en datos.
+
+Con los datos listos, se procede a entrenar distintos algoritmos. Modelos como regresión logística, 
+árboles de decisión o métodos más avanzados como Random Forest o XGBoost son comúnmente utilizados. La 
+elección dependerá del tipo de datos y del balance entre precisión e interpretabilidad que se busque.
+
+
+Posteriormente, se evalúa el rendimiento del modelo usando métricas como precision, recall, F1-score o 
+ROC-AUC, especialmente si se trata de un problema con clases desbalanceadas. En estos casos, se pueden 
+aplicar técnicas como SMOTE o undersampling para mejorar la detección de casos positivos.
+
+
+Finalmente, tras afinar los hiperparámetros (por ejemplo, con GridSearchCV), el modelo puede ser 
+desplegado en un entorno real. Es importante establecer un proceso de monitorización continua, ya que el
+ comportamiento de los clientes puede cambiar con el tiempo. Además, si se trabaja con áreas de negocio,
+  conviene usar modelos interpretables o aplicar métodos como SHAP values para explicar el impacto de 
+  cada variable, facilitando la toma de decisiones estratégicas basadas en datos.
